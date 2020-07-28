@@ -2,16 +2,16 @@ import Head from "next/head";
 import Navbar from "./Navbar";
 
 const Layout = (props) => (
-  <div>
+  <main>
     <Head>
       <title>BitInfo</title>
-      <link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css" />
+      <meta name="description" content="Get bitcoin prices in USD, EUR and GBP" />
     </Head>
     <Navbar />
     <div className="container">
       {props.children}
     </div>
-  </div>
+  </main>
 );
 
 export default Layout;
