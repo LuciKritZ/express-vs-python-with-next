@@ -1,2 +1,3 @@
-node_modules
-.next
+client/node_modules
+client/.next
+server/node-express/node_modules

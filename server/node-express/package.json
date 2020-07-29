@@ -1,0 +1,22 @@
+{
+  "name": "recipebook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Krishal Shah",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "*",
+    "consolidate": "*",
+    "cors": "^2.8.5",
+    "dust": "*",
+    "dustjs-helpers": "*",
+    "dustjs-linkedin": "*",
+    "express": "*",
+    "moment": "^2.27.0",
+    "pg": "*"
+  }
+}
