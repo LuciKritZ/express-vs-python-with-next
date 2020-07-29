@@ -4,8 +4,8 @@ import Navbar from "./Navbar";
 const Layout = (props) => (
   <main>
     <Head>
-      <title>BitInfo</title>
-      <meta name="description" content="Get bitcoin prices in USD, EUR and GBP" />
+      <title>PerformRight</title>
+      <meta name="description" content="Gets the computation time difference in Node (Express) and Python (Flask API) API request in PostgreSQL." />
     </Head>
     <Navbar />
     <div className="container">

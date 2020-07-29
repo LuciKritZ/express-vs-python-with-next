@@ -3,7 +3,7 @@ import Link from "next/link";
 const Navbar = () => (
   <nav className="navbar navbar-expand navbar-dark bg-dark mb-4">
     <div className="container">
-      <a className="navbar-brand" href="#">BitzPrice</a>
+      <a className="navbar-brand" href="#">PerformRight</a>
       <div className="collapse navbar-collapse">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
@@ -13,7 +13,7 @@ const Navbar = () => (
             <Link href="/about"><a className="nav-link">About</a></Link>
           </li>
           <li className="nav-item">
-            <Link href="/comparison"><a className="nav-link">Comparison</a></Link>
+            <Link href="/bitcoin"><a className="nav-link">Bitcoin</a></Link>
           </li>
         </ul>
       </div>
