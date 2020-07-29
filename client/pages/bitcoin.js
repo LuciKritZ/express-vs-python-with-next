@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import Comparison from "../components/Comparison";
+import Prices from "../components/Prices";
 import fetch from "isomorphic-unfetch";
 
 const Index = (props) => (
@@ -9,16 +9,16 @@ const Index = (props) => (
         Welcome to BitInfo
       </h1>
       <p>Check current bitcoin rate</p>
-      <Comparison totalRecords={props.totalRecords} />
+      <Prices bpi={props.bpi} />
     </div>
   </Layout>
 );
 
 Index.getInitialProps = async function () {
-  const nodeAPI = await fetch('http://localhost:4000/');
-  const nodeAPIData = await nodeAPI.json();
+  const res = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
+  const data = await res.json();
   return {
-    totalRecords: nodeAPIData
+    bpi: data.bpi,
   }
 }
 
