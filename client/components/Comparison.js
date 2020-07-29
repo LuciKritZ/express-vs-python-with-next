@@ -73,14 +73,14 @@ class Comparison extends React.Component {
               Enter the number of entries you want to add from Node API:
               <input value={this.state.countNode} type="number" className="form-control" onChange={e => this.setState({ countNode: e.target.value })}></input>
             </label>
-            <button onClick={this.nodeClicked} className="btn btn-secondary mx-4 py-2" disabled={this.state.countNode && !this.state.nodeButtonClicked ? false : true}>Test</button>
+            <button onClick={this.nodeClicked} className="btn btn-secondary mx-4 py-2" disabled={this.state.countNode ? false : true}>Test</button>
           </div>
           <div className="col col-6 d-block justify-content-center align-items-center">
             <label>
               Enter the number of entries you want to add from Python API:
               <input value={this.state.countPython} type="number" className="form-control" onChange={e => this.setState({ countPython: e.target.value })}></input>
             </label>
-            <button onClick={this.pythonClicked} className="btn btn-secondary mx-4 py-2" disabled={this.state.countPython && !this.state.pythonButtonClicked ? false : true}>Test</button>
+            <button onClick={this.pythonClicked} className="btn btn-secondary mx-4 py-2" disabled={this.state.countPython ? false : true}>Test</button>
           </div>
         </div>
         <div className="row mx-0">
