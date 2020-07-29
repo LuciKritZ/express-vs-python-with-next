@@ -1,3 +1,4 @@
 client/node_modules
 client/.next
 server/node-express/node_modules
+server/python-fast-api/__pycache__
