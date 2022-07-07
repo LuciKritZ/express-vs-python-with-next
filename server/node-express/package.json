@@ -16,7 +16,7 @@
     "dustjs-helpers": "*",
     "dustjs-linkedin": "*",
     "express": "*",
-    "moment": "^2.27.0",
+    "moment": "^2.29.4",
     "pg": "*"
   }
 }
